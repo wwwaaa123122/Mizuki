@@ -12,16 +12,16 @@ import { LinkPreset } from "./types/config";
 import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 
 // Define site language
-const SITE_LANG = "en"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
+const SITE_LANG = "zh_CN"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "星辰旅人的blog",
+	subtitle: "爱你所爱",
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 210, // Default hue for theme color, range from 0 to 360. e.g., red: 0, cyan: 200, teal: 250, pink: 345
+		hue: 250, // Default hue for theme color, range from 0 to 360. e.g., red: 0, cyan: 200, teal: 250, pink: 345
 		fixed: false, // Hide theme color picker for visitors
 	},
 	translate: {
@@ -68,13 +68,12 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // Display custom text on homepage
-			title: "Mizuki", // Homepage banner main title
+			title: "星辰旅人のblog", // Homepage banner main title
 
 			subtitle: [
-				"One demo website",
-				"Carousel Text1",
-				"Carousel Text2",
-				"Carousel Text3",
+				"爱你所爱",
+				"技术分享",
+				"日常",
 			], // Homepage banner subtitle, supports multiple texts
 			typewriter: {
 				enable: true, // Enable subtitle typewriter effect
@@ -98,11 +97,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// Leave empty to use default favicon
-		// {
-		//   src: '/favicon/icon.png',    // Icon file path
-		//   theme: 'light',              // Optional, specify theme 'light' | 'dark'
-		//   sizes: '32x32',              // Optional, icon size
-		// }
+		{
+		   src: 'https://q2.qlogo.cn/headimg_dl?dst_uin=3655437054&spec=5',    // Icon file path
+		   theme: 'light',              // Optional, specify theme 'light' | 'dark'
+		   sizes: '128×128',              // Optional, icon size
+	    }
 	],
 };
 
@@ -112,11 +111,9 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		LinkPreset.Friends,
-		LinkPreset.Anime,
-		LinkPreset.Diary,
 		{
 			name: "GitHub",
-			url: "https://github.com/matsuzaka-yuki", // Internal links should not include base path as it will be automatically added
+			url: "https://github.com/wwwaaa123122", // Internal links should not include base path as it will be automatically added
 
 			external: true, // Show external link icon and open in new tab
 		},
@@ -124,24 +121,19 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.jpg", // Relative to /src directory. If starts with '/', relative to /public directory
-	name: "Mizuki",
-	bio: "This is a description",
+	avatar: "'https://q2.qlogo.cn/headimg_dl?dst_uin=3655437054&spec=5", // Relative to /src directory. If starts with '/', relative to /public directory
+	name: "星辰旅人",
+	bio: "Protect What You Love./爱你所爱！",
 	links: [
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://space.bilibili.com/3493078983772353",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/wwwaaa123122",
 		},
 	],
 };
@@ -166,7 +158,7 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	enable: true, // Enable announcement feature
+	enable: false, // Enable announcement feature
 	title: "Announcement", // Announcement title
 	content: "Welcome to my blog! This is a sample announcement.", // Announcement content
 	closable: true, // Allow users to close the announcement
