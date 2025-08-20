@@ -97,11 +97,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// Leave empty to use default favicon
-		{
+		    {
 		   src: 'https://q2.qlogo.cn/headimg_dl?dst_uin=3655437054&spec=5',    // Icon file path
 		   theme: 'light',              // Optional, specify theme 'light' | 'dark'
 		   sizes: '128×128',              // Optional, icon size
-	    }
+	        }
 	],
 };
 
@@ -121,7 +121,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "'https://q2.qlogo.cn/headimg_dl?dst_uin=3655437054&spec=5", // Relative to /src directory. If starts with '/', relative to /public directory
+	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=3655437054&spec=5", // Relative to /src directory. If starts with '/', relative to /public directory
 	name: "星辰旅人",
 	bio: "Protect What You Love./爱你所爱！",
 	links: [
