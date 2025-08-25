@@ -17,6 +17,7 @@ const SITE_LANG = "zh_CN"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
 export const siteConfig: SiteConfig = {
 	title: "Starlr的blog",
 	subtitle: "爱你所爱",
+	description: "星辰旅人的博客，技术分享及日常",
 
 	lang: SITE_LANG,
 
