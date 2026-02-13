@@ -1,6 +1,6 @@
-name = "mizuki"
+name = "mizuki-static"          # 改成你想要的 Worker 名字
 compatibility_date = "2026-02-13"
-pages_build_output_dir = "./dist"      # 重点在这行
+main = "src/index.js"           # 这个可以随便写个空文件，或者下面给的模板
 
 [assets]
-directory = "./dist"
+directory = "./dist"            # 重点！指定静态资源目录
