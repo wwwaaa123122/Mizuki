@@ -1,0 +1,6 @@
+name = "mizuki"
+compatibility_date = "2026-02-13"
+pages_build_output_dir = "./dist"      # 重点在这行
+
+[assets]
+directory = "./dist"
